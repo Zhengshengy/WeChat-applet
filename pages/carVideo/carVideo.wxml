@@ -1,0 +1,45 @@
+<view class='t-modal' catchtouchmove="preventTouchMove"></view>
+<cover-view class='t-zhezhao demotext' bindtap='isPlay' bindtouchstart="touchStart" bindtouchend="touchEnd"></cover-view>
+  <view class='videoplayer' style="height:{{winH}}px;width:{{winW}}px;">  
+     <view class='video'>
+     <view hidden='true'></view>
+      <view class='main'>
+        <!-- <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" scroll-top="{{scrollTop}}" bindscrolltoupper="searchScrollToupper" style="height:{{winH}}px;" upper-threshold='0' upper-threshold='10'>  -->
+        <view id='yincang'></view>
+         <view class='show'>
+            <view class='image'>
+              <video class='coverimage' id='myVideo' style="height:{{winH}}px;width:{{winW}}px;cursor:pointer;" src='{{video}}' custom-cache="{{false}}" autoplay='true' loop='true' enable-progress-gesture="{{false}}"  show-play-btn="{{false}}" show-fullscreen-btn="{{false}}" controls="{{false}}" objectFit='contain' >
+           <!-- <cover-view class='flowerview' >
+                <cover-view class='flower' bindtap='addFlower'>{{flower}}</cover-view>
+           </cover-view> -->
+              </video>
+              <!-- <image class='coverimage' src="{{image}}" mode="aspectFit">
+              </image>              -->
+            </view>
+         </view>
+          <cover-view class='zixun' wx:if="{{hiddenzixun?true:false}}">
+          <cover-view class='prise'>       
+              <cover-view style='margin-bottom: 20rpx;color: white;font-size: 35rpx;'>{{praise}}</cover-view>
+              <cover-image src='../menu/prise.png' bindtap="addPraise" mode="aspectFill" class='priselogo' ></cover-image>
+          </cover-view>
+          <cover-view class="my-reserve-lianxi" wx:if="{{phone?true:false}}">
+              <cover-view class="my-reserve-lianxi1">
+                <cover-image src="../menu/phone.png" mode="aspectFill" bindtap="calling" data-phone="{{phonenumber}}" class='phonelogo'></cover-image>
+              </cover-view>
+           </cover-view>
+           <cover-image src='../menu/chat.png' bindtap="chatToUser" wx:if="{{hiddenchat?true:false}}" class='chat' >
+           </cover-image>
+         </cover-view>
+        <cover-view class='title'>
+           <cover-view class='titledes'>{{ptitle}}</cover-view>
+         </cover-view>
+           <cover-view class='des'>
+              <cover-image class='logo' src='{{logo}}' bindtap='userinfo'></cover-image>
+              <cover-view class='mename'>{{username}}</cover-view>
+              <cover-image class='flowerlogo' bindtap='addFlower' data-flower="{{flower}}"src='{{flowerLogo}}'></cover-image>
+              <cover-view class='destince' hidden='{{hidden}}' catchtap='baidumap' >1km</cover-view>
+            </cover-view>
+        <!-- </scroll-view> -->
+      </view>   
+     </view>  
+  </view>

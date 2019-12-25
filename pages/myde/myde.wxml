@@ -1,0 +1,47 @@
+<view class="user-head">
+<!-- <text class="login {{loginbtn?'show':'hide'}}"  bindtap="gologin">网站用户登录</text> -->
+    <view class="center">
+        <view class="user-img">
+            <image mode="scaleToFill" src="{{headimg}}" />
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="user-text">
+<open-data type="userNickName" lang="zh_CN"></open-data>
+        </view>
+    </view>
+</view>
+
+<view class="list">
+    <view class="item" bindtap="order">
+        <image src="../menu/yonghufill.png"/>我的资料
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="huodong">
+       <image src="../menu/tongzhifill1.png"/>我的消息
+       <text wx:if="{{unread>0}}" class="unread-style">{{unread<=99?unread:'99+'}}</text>
+       <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="guanzhu">
+       <image src="../menu/myfocus.png"/>我的关注
+        <text class="jump">〉</text>
+    </view>
+    <navigator target="miniProgram" open-type="navigate" app-id='wxf071f0a185c596fc' extra-data='' path ='pages/authorize/authorize?userid={{userid}}' version='release' bindsuccess='跳转成功' bindfail='跳转失败'>
+      <view class="item "> 
+        <image src="../menu/mycenter.png"/>
+        <text class="mycenter">我的个人中心</text>   
+          <text class="jump">〉</text>  
+      </view>
+    </navigator>
+    <view class="item" bindtap="guanyu">
+       <image src="../menu/guanyu.png"/>关于我们
+        <text class="jump">〉</text>
+    </view>
+    <!-- <view class="item {{loginbtn?'hide':'show'}}" bindtap="xitongxiaoxi">
+       <image src="../menu/add.png"/>视频上传
+        <text class="jump">〉</text>
+    </view>
+    <view class="item {{loginbtn?'hide':'show'}}" bindtap="photoadd">
+       <image src="../menu/adds.png"/>交车图片上传
+        <text class="jump">〉</text>
+    </view> -->
+</view>

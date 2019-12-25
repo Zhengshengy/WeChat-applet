@@ -1,0 +1,66 @@
+<view class="page-body">
+  <view class='body'>
+    <view class='head-top'>
+      <view class='search'>
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class='search-name' placeholder="搜索视频"  bindinput="bindKeywordInput" value='{{searchKeyword}}'></input>      
+      </view>
+      <view class='sousuo' bindtap='searchVideo'>搜索</view>
+      <!-- <view class='merchant'> 
+      <view class='sousuo' bindtap='searchVideo'>搜索</view>
+        <view class='merchant-zone' catchtap='searchmerchant'>
+          <label class='merchant-name' data-id='0' data-name='品牌'>{{merchantname}}</label>
+          <text class='icon'>▼</text>
+        </view> 
+        <view class='choose-merchant' hidden='{{hiddenName}}'>
+          <view class='option' wx:for="{{merchantlist}}" data-index='{{index}}' style='{{index==merlenght-1&&"border:0;"}}' wx:key="id" wx:for-index="index" wx:for-item="item" catchtap='searchVideo' data-id='{{item.id}}' data-name='{{item.name}}'>         
+            <label style="{{touchstyle}}">{{item.name}}</label>
+          </view>       
+        </view>
+      </view>  -->   
+    </view> 
+    <view class="page-section tc">   
+      <view style="display:none">
+        <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad" binderror="onImageLoadError" data-errorimg="{{item.index}}" data-index="{{item.index}}"></image>
+      </view>
+      <scroll-view scroll-y="true" style="height:{{scrollH}}px">
+        <view style="width:100%">
+          <view class="img_item">
+            <view wx:for="{{col1}}" wx:key="id">
+              <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px" data-id='{{item.dataid}}' data-index='{{item.index}}'  data-userid='{{item.userid}}' data-wxuserid='{{item.wxuserid}}' catchtap='carvideo'>
+                <view class='buttom'>
+                  <view class='title'>
+                    <text>{{item.title}}</text>
+                  </view>
+                  <view class='videodes'>
+                    <text class='prisenum'>{{item.praisenum}}赞</text>
+                    <text class='username'>{{item.username}}</text>
+                  </view>
+                </view>
+              </image>
+            </view>
+          </view>
+          <view class="img_item">
+            <view wx:for="{{col2}}" wx:key="id">
+              <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px" data-id='{{item.dataid}}' data-index='{{item.index}}'  data-userid='{{item.userid}}' data-wxuserid='{{item.wxuserid}}' catchtap='carvideo'>
+                <view class='buttom'>
+                  <view class='title'>
+                    <text>{{item.title}}</text>
+                  </view>
+                  <view class='videodes'>
+                    <text class='prisenum'>{{item.praisenum}}赞</text>
+                    <text class='username'>{{item.username}}</text>
+                  </view>
+                </view>
+              </image>
+            </view>
+          </view>
+        </view>  
+      </scroll-view>
+      <image class='addfile' src='../menu/addfile.png' bindtap='addvideo'></image>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>      
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部视频</view>
+      <view class="loading nodata" hidden="{{!alert}}">没有相关视频</view> 
+    </view>  
+  </view>
+</view>

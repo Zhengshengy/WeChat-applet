@@ -1,0 +1,20 @@
+@import "../../modules/chat-page/word.wxss";
+@import "../../modules/chat-input/chat-input.wxss";
+@import "../../modules/chat-page/chat-page-status.wxss";
+page {
+    background-color: #EFEFEF;
+}
+.main-body{
+  margin-bottom: 0rpx; 
+}
+/*隐藏滚动条*/
+
+::-webkit-scrollbar{
+
+width: 0;
+
+height: 0;
+
+color: transparent;
+
+}

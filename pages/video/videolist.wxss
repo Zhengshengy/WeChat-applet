@@ -1,0 +1,199 @@
+/* 
+/* pages/index/indexone.wxss */
+@import "/pages/seeCar/item.wxss";
+::-webkit-scrollbar {
+     display: none;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+}
+.head-top{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  height: 55rpx;
+  color: #8897BA;
+  font-weight: 100;
+  z-index: 999;
+  top:100rpx;
+}
+.search{
+  display:flex;
+  flex-direction:row;
+  height:41rpx;
+  justify-content:space-around;
+  text-align:center;
+  position:fixed;
+  border:1px rgb(240, 233, 233) solid;
+  border-radius:10rpx 0rpx 0rpx 10rpx;
+  margin:4rpx 0rpx 0rpx 89rpx;
+  background-color:white;
+}
+.search-name{
+  font-size: 29rpx;
+  height:55rpx;
+  width: 550rpx;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.searchcion {
+  left:50rpx;
+  z-index: 1;
+  width: 20rpx;
+  height: 20rpx;
+  text-align: center;
+}
+.sousuo {
+  position: fixed;
+  margin-left:590rpx;
+  width:55rpx;
+  line-height:150%;
+  text-align:center;
+  border:1px rgb(240, 233, 233) solid;
+  border-radius:0rpx 10rpx 10rpx 0rpx;
+  background-color:white;
+  height:41rpx;
+  justify-content:space-around;
+  top:104rpx;
+}
+.icon{
+  text-align:end;
+  right: 0rpx;
+  font-size: 28rpx;
+}
+.content{
+  margin-left:-1rpx;
+  margin-right:8rpx;
+}
+.image {
+   width: 100%;
+   height: 590rpx;
+   margin:0 auto;
+}
+.time-text{
+  font-size: 50rpx;
+  color: #fff;
+}
+.item-text-view{
+  background: #000000;
+  height: 51rpx;
+  position: relative;
+  margin-top: -60rpx;
+  display: block;
+  opacity: 0.1
+}
+.item{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left:  2rpx;
+  margin-right: 2rpx;
+  border:1rpx solid #ccc;
+}
+.item-view{
+   width: 50%;
+   float: left;
+}
+.loading{
+  padding: 10rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.loading:before{
+  display: inline-block;
+  margin-right: 5rpx;
+  vertical-align: middle;
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+}
+.loading.complete:before{
+  display: none;
+}
+.title{
+  margin-top: 5rpx; 
+  float: left;
+  height: 50%;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.buttom{
+  font-size: 26rpx;
+  width:100%;
+  height: 90rpx;
+  flex-direction: column;
+  margin-top: -100rpx;
+  margin-left: 10rpx;
+  position: relative;
+  color: white; 
+}
+.videodes{
+  display: flex;
+  flex-direction: row;
+  font-weight:100;
+  width: 99%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.username{
+  width: 45%;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+  left:-60px;
+  position:relative;
+}
+.atitle{
+  line-height:18pt;
+  margin:0 auto;
+  float: left;
+  margin-top: 5rpx; 
+  margin-left: 20rpx;
+  height: 50%;
+  font-size: 32rpx;
+}
+
+.ades{ 
+  display: flex;
+  flex-direction: row;
+  font-weight:100;
+  width: 99%;
+  height: 50%;
+  color: #555555;
+  margin-bottom: 0rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.aprisenum{
+  width: 20%;
+  float: left;
+  font-size: 28rpx;
+}
+.ausername{
+  font-size:30rpx;
+  margin:0 auto;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.yz{
+  font-size: 20rpx;
+}
+.addfile{
+  width:100rpx;
+  height:100rpx;
+  bottom:100rpx;
+  z-index:999;
+  position:fixed;
+  right:20rpx;
+}

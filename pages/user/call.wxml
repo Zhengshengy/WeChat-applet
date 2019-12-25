@@ -1,0 +1,7 @@
+<div class="bg-box">
+    <image src='../menu/xuanchuan.jpg' class="bg-image" mode="scaleToFill">
+    </image>
+    <view class="view01" bindtap="viewClick01">
+        <text class='phone'>{{phonenum}}</text>
+    </view>  
+</div>

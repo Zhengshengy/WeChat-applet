@@ -1,0 +1,43 @@
+  <view class="list">
+    <view class="item">
+      头像
+        <view class="jump Url">
+        <image class="{{loginbtn?'hide':'show'}}" mode="scaleToFill" src="{{headimg}}" />
+            <open-data class="{{loginbtn?'show':'hide'}}" type="userAvatarUrl"></open-data>
+        </view>
+    </view>
+    <view class="item">
+       昵称
+        <view class="jump ">
+         <text class="{{loginbtn?'hide':'show'}}">{{username}}</text>
+<open-data type="userNickName" class="{{loginbtn?'show':'hide'}}" lang="zh_CN"></open-data>
+        </view>
+    </view>
+    <view class="item">
+       性别
+        <view class="jump">
+        <text class="{{loginbtn?'hide':'show'}}">{{sex}}</text>
+        <open-data type="userGender"  class="{{loginbtn?'show':'hide'}}" lang="zh_CN"></open-data>
+        </view>
+    </view>
+    <view class="item">
+       地址
+        <view class="jump">
+        <open-data type="userCountry" lang="zh_CN"></open-data>
+        <open-data type="userProvince" lang="zh_CN"></open-data>
+        <open-data type="userCity" lang="zh_CN"></open-data>
+        </view>
+    </view>
+    <view class="item {{loginbtn?'hide':'show'}}">
+       电话
+        <view class="jump {{loginbtn?'hide':'show'}}">
+        <text class="{{loginbtn?'hide':'show'}}">{{phone}}</text>
+        </view>
+    </view>
+    <view class="items {{loginbtn?'hide':'show'}}" bindtap="respassword">
+       修改资料
+    </view>
+    <view class="items {{loginbtn?'hide':'show'}}" bindtap="clearlogin">
+       退出登录
+    </view>
+</view>

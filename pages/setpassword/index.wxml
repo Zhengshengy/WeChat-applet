@@ -1,0 +1,43 @@
+<view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+<form  bindsubmit="formSubmit" >
+<view class="container container-gray">
+	<view class="group">
+		<view class="group-body">
+			<view class="input-list">
+				<view class="input-item">
+					<text class="input-item-label">姓名</text>
+					<view class="input-item-content">
+						<input type="text" placeholder="姓名" name="username" value='{{username}}'></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<text class="input-item-label">电话</text>
+					<view class="input-item-content">
+						<input type="text" placeholder="电话" name="phone" value='{{phone}}'></input>
+					</view>
+				</view>
+        <view class="input-item">
+					<text class="input-item-label">用户ID</text>
+					<view class="input-item-content">
+						<input type="text" placeholder="id" disabled='{{true}}' name="id" value='{{id}}'></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<text class="input-item-label">密码</text>
+					<view class="input-item-content">
+						<input type="text" placeholder="密码" name="password" value='{{password}}'></input>
+					</view>
+				</view>
+        <view class="weui-uploader__file">
+            <image class="weui-uploader__img" src="{{headimg}}" mode="aspectFill"  bindtap="chooseImage"/>
+            <text>点击图片进行图像替换</text>
+        </view>
+			</view>
+		</view>
+     <view class="btn-submit">
+		    <button form-type='submit' class="btn-block btn-orange" >提交</button>
+	   </view>
+    </view>
+
+</view>
+	</form>

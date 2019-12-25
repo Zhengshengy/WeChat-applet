@@ -1,0 +1,24 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<scroll-view scroll-y="true" class="contain_detail_cnt" style="height:{{winHeight - 40}}px;">  
+	<!-- 标题 -->
+	<view class="box-title">
+		<text class="title">{{title}}</text>
+    <text class='posttime'>{{articleInfo.posttime}}</text>
+	</view>
+    <view class='articledes'>
+      <view class='logo'>
+        <image class='brandlogo'></image>
+      </view>
+      <view class='brandname'></view>     
+      <view class='merchantname'></view>
+      <image class='priselogo'></image>
+      <view class='prise'>0人赞</view>
+    </view>
+
+	<!-- 内容 -->
+	<view class="content" scroll-y="true">
+		<block>
+      <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+		</block>
+	</view>
+</scroll-view>

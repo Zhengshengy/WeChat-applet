@@ -1,0 +1,171 @@
+/* pages/article/article.wxss */
+::-webkit-scrollbar {
+     display: none;
+}
+.hotnews{
+  background: #FFFFFF;
+   margin-top: 15rpx;
+}
+.hotxinwen{
+width: 750rpx;
+height:150rpx;
+display: flex;
+justify-content: space-around;
+ margin-top: 15rpx;
+ border-bottom: 1px solid #F2F2F2;
+ 
+}
+.hotxinwen > view{
+  flex:none;
+}
+.hotxinwen1{
+width: 500rpx;
+height:190rpx;
+font-size:30rpx ;
+color:#101010 ;
+font-weight: normal;
+font-style: normal;
+}
+.footer {
+	color: #576b95;
+	font-size: 10pt;
+	text-align: center;
+	margin-top: 30rpx;
+	margin-bottom: 16rpx;
+  line-height: 20pt;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+}
+.addarticle{
+  display: flex;
+  font-size: 50rpx;
+  flex-direction: row-reverse;
+}
+.interval{
+  height: 15rpx;
+  width: 100%;
+  background-color: #F0F0F2;
+  margin-top: -5rpx;
+}
+.news{
+  width: 100%;
+  height:150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height:18pt;
+  margin:0 auto;
+  float: left;
+  margin-top: 5rpx; 
+  margin-left: -20rpx;
+  height: 50%;
+  font-size: 32rpx;
+}
+.nickname{
+  font-size: 33rpx;
+  font-weight: 600;
+}
+.chatlogo{
+  width:50%;
+  height: 60rpx;
+  margin-bottom: -35rpx;
+  margin-right: 80rpx;
+  z-index:999;
+}
+/* .title{
+  line-height:18pt;
+  margin:0 auto;
+  float: left;
+  margin-top: 5rpx; 
+  margin-left: 20rpx;
+  height: 50%;
+  font-size: 32rpx;
+} */
+.buttom{
+  font-size: 30rpx;
+  width:100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 0.5rpx ghostwhite solid;
+}
+.des{ 
+  display: flex;
+  flex-direction: row;
+  font-weight:100;
+  width: 99%;
+  height: 50%;
+  color: #555555;
+  margin-bottom: 0rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.prisenum{
+  width: 20%;
+  float: left;
+  font-size: 28rpx;
+}
+.username{
+  font-size:30rpx;
+  margin:0 auto;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.yz{
+  font-size:30rpx;
+  margin:0 auto;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.merchantname{
+  float: right;
+  font-size: 30rpx;
+  padding-right:10rpx; 
+  text-align: right;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.left{
+  width:60%;
+  height:100%
+}
+.image{
+  width:36%;
+  padding-right: 20rpx; 
+  height: 150rpx;
+}
+#articleimage{
+  width:44%;
+  height: 135rpx;
+  margin-top: 0rpx;
+  margin-left: 32rpx;
+  border-radius: 50%;
+}
+.loading{
+  padding: 10rpx;
+  text-align: center;
+}
+.loading:before{
+  display: inline-block;
+  margin-right: 5rpx;
+  vertical-align: middle;
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+}
+.loading.complete:before{
+  display: none;
+}

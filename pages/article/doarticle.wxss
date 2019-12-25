@@ -1,0 +1,42 @@
+/* pages/article/doarticle.wxss */
+.body{
+  margin-top: 20rpx;
+  position: relative;
+  width: 100%;
+  left: 20rpx; 
+  right: -20rpx;
+}
+.title{
+  border-bottom: 1px solid #f3f3f3;
+  width: 95%;
+}
+.toWrite{
+  display: flex;
+  flex-flow: row;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 32rpx;
+  height: 60rpx;
+  margin-top:20rpx; 
+  width: 95%;
+}
+.content-main{
+  margin-top: 50rpx;
+}
+.img_view{
+    position: relative;
+}
+.img_view button{
+    background-color: blue
+}
+.cancelicon{
+  position: relative;
+  top:-490rpx;
+  left:625rpx;
+  z-index: 10;
+}
+.btn-area{
+  margin-top: 60rpx;
+  width: 95%;
+}

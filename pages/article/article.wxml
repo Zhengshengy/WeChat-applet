@@ -1,0 +1,46 @@
+<view class='body'>
+    <view class='top'>
+      <view class='interval'></view>
+    </view>
+    <view class="hotnews">
+      <view wx:for="{{articleList}}">
+      <view wx:if="{{item.imgnum < 3}}">
+        <navigator url="../newsinfo/newsinfo?id={{item.aid}}&title={{item.title}}&praisenum={{item.praisenum}}"  id="{{item.aid}}" class='hotxinwen' >
+          <view class='news' >     
+            <view class='left'>
+              <view class='title'>{{item.title}}</view>
+                <view class='des'>
+                  <view class='username'>{{item.author}}</view>
+                  <view class='prisenum'>{{item.praisenum}}人赞</view>
+                </view>
+              </view>
+            <view class='image'>
+              <image id='articleimage' src='{{headurl}}' wx:if="{{item.picurl==''}}" mode='aspectFill'></image>
+              <image id='articleimage' src='{{item.picurl}}' mode='aspectFill' wx:else></image>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view wx:else>
+        <navigator url="../newsinfo/newsinfo?id={{item.aid}}&title={{item.title}}&praisenum={{item.praisenum}}" id="{{item.aid}}" class='hotxinwen1'>
+          <view class='news1' >     
+            <view class='left1'>
+              <view class='title1'>{{item.title}}</view>
+              <view class='image image1'>
+              <image class='articleimage1' src='{{item.img[0]}}' mode='aspectFill'></image>
+              <image class='articleimage1' src='{{item.img[1]}}' mode='aspectFill'></image>
+              <image class='articleimage1' src='{{item.img[2]}}' mode='aspectFill'></image>
+            </view>
+                <view class='des1'>
+                  <view class='username1'>{{item.author}}</view>
+                  <view class='prisenum1'>{{item.praisenum}}人赞</view>
+                </view>
+              </view>
+          </view>
+        </navigator>
+      </view>
+      </view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>      
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部文章</view>
+    </view>
+</view>

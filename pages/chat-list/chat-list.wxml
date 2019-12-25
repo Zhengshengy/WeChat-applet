@@ -1,0 +1,14 @@
+<import src="view/chat-item.wxml"/>
+<block wx:for="{{conversations}}" wx:key="conversationId">
+    <template is="chat-item" data="{{...item}}"/>
+</block>
+<view class='handle' hidden='{{handlehidden ? ((handlehidden == 1) ? true : flase)  : true}}'>
+  <view class='handle-left' bindtap='deleteHandle'>
+    <image class='delete' src='../menu/icon/delete.png'></image>
+    <text class='delete-text'>删除</text>
+  </view>
+  <view class='handle-right' bindtap='closeHandle'>
+    <image class='close' src='../menu/icon/close.png'></image>
+    <text class='close-text'>关闭</text>
+  </view>
+</view>

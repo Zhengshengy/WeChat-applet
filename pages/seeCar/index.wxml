@@ -1,0 +1,26 @@
+<import src="item.wxml"/>
+<view class='body'>
+  <view class='head-top'>
+    <view class='search' hidden='{{hiddesearch}}'> 
+      <input class='search-name' placeholder="搜索视频"  bindinput="bindKeywordInput" value='{{searchKeyword}}'></input>
+    </view>
+    <icon class="searchcion sousuo" size='20' type='search' bindtap='searchVideo'></icon>
+  </view> 
+  <view >
+  <view class='content'>
+    <view class="item-view">
+      <block wx:for="{{videoList}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+      </block>
+    </view>
+    <view class="item-view">
+      <block wx:for="{{videoList}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+      </block>
+    </view>
+  </view>
+  </view>
+  <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>      
+  <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部视频</view>
+  <view class="loading nodata" hidden="{{!alert}}">没有相关视频</view> 
+</view>

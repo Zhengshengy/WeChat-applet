@@ -1,0 +1,1 @@
+<button bindtap="openSetting">我的授权设置</button> 

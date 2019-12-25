@@ -1,0 +1,4 @@
+<view>
+  <video class='currentvideo' src='{{videosrc}}' autoplay='true'>
+  </video>
+</view>

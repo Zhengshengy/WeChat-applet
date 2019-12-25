@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "播放视频",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": "50px"
+}

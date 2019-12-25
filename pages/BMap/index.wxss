@@ -1,0 +1,10 @@
+/* pages/BMap/index.wxss */
+.map_container{ 
+    height: 800rpx; 
+    width: 100%; 
+} 
+
+.map { 
+    height: 100%; 
+    width: 100%; 
+}

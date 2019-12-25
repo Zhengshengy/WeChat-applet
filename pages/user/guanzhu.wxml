@@ -1,0 +1,26 @@
+<view class='body'>
+    <view class='top'>
+      <view class='interval'></view>
+    </view>
+    <view class="hotnews">
+
+      <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" style="height:{{winH}}px;">
+        <view wx:for="{{flowerList}}" id="{{item.id}}" class='hotxinwen'>
+          <view class='news' >   
+            <view class='image left'>
+              <image id='articleimage' src='{{item.avatarurl}}' bindtap='userinfo' data-userid='{{item.session3rd}}'></image>
+            </view>  
+            <view class='userinfo'>
+              <view class='nickname'>{{item.nickname}}</view>
+              <view class='address'>{{item.province}} {{item.city}}</view>
+            </view>
+            <view>
+              <image class='chatlogo' src='../menu/chatlogo.png' mode="aspectFit" bindtap='chat'></image>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>      
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部文章</view>
+    </view>
+</view>

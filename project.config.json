@@ -1,0 +1,190 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.4",
+	"appid": "wxa16171d84c964e1a",
+	"projectname": "wxx",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "视频列表",
+					"pathName": "pages/video/video",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "汽车视频列表",
+					"pathName": "pages/seeCar/carlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频预览",
+					"pathName": "pages/carVideo/carVideo",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "视频图片页面",
+					"pathName": "pages/carVideo/carVideo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的资料",
+					"pathName": "pages/myde/myde",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/myde/myde",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户中心",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的粉丝",
+					"pathName": "pages/seeCar/carlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "小程序跳转",
+					"pathName": "pages/index/index",
+					"query": "userid=wxf071f0a185c596fc",
+					"scene": "1037",
+					"referrerInfo": {
+						"appId": "wxf071f0a185c596fc",
+						"extraData": "{}"
+					}
+				},
+				{
+					"id": -1,
+					"name": "小程序跳转",
+					"pathName": "pages/index/index",
+					"query": "userid=wxf071f0a185c596fc",
+					"scene": "1038",
+					"referrerInfo": {
+						"appId": "wxf071f0a185c596fc",
+						"extraData": "{}"
+					}
+				},
+				{
+					"id": -1,
+					"name": "小程序跳转",
+					"pathName": "pages/myde/myde",
+					"query": "userid=wxf071f0a185c596fc",
+					"scene": "1038",
+					"referrerInfo": {
+						"appId": "wxf071f0a185c596fc",
+						"extraData": "{}"
+					}
+				},
+				{
+					"id": -1,
+					"name": "小程序跳转",
+					"pathName": "pages/index/index",
+					"query": "userid=wxf071f0a185c596fc",
+					"scene": "1037",
+					"referrerInfo": {
+						"appId": "wxf071f0a185c596fc",
+						"extraData": "{\"userid\":111111}"
+					}
+				},
+				{
+					"id": -1,
+					"name": "视频测试",
+					"pathName": "pages/carVideo/videoTest",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ceshi",
+					"pathName": "pages/carVideo/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "打电话",
+					"pathName": "pages/user/call",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/myde/myde",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频列表",
+					"pathName": "pages/seeCar/carlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试瀑布；流",
+					"pathName": "pages/seeCar/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文章列表",
+					"pathName": "pages/article/article"
+				}
+			]
+		}
+	}
+}

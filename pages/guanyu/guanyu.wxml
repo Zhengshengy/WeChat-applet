@@ -1,0 +1,47 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="container-body space-content">
+	  <view class="space-top">
+	  	<view class="space-banner" bindtap="imgPreview">
+		  	<swiper
+		  	  autoplay="{{true}}" interval="{{4000}}" duration="{{1000}}" bindchange="setCurrent">
+		  	  <block wx:for="{{spaceimgs}}" wx:key="*this">
+		  	    <swiper-item>
+		  	      <image src="{{item}}" mode="aspectFill" class="slide-image"/>
+		  	    </swiper-item>
+		  	  </block>
+		  	</swiper>
+	  	  <view class="number-banner">
+	  	  	<text>{{currentIndex>9?currentIndex:'0'+currentIndex}}</text>
+	  	  	<text>/{{spaceimgs.length>9?spaceimgs.length:'0'+spaceimgs.length}}</text>
+	  	  </view>
+	  	</view>
+  	  <view class="space-info">
+  	  	<view class="space-title">{{activitydata.name}}</view>
+  	  	<view class="space-list">
+          <view class="space-item">
+  	  			<text class="text-left">公司：</text>
+  	  			<text class="text-right">{{activitydata.hoster}}</text>
+  	  		</view>
+  	  		<view class="space-item">
+  	  			<text class="text-left">公司地址：</text>
+  	  			<text class="text-right">{{activitydata.address}}</text>
+  	  		</view>
+  	  		<view class="space-item">
+  	  			<text class="text-left">成立时间：</text>
+  	  			<text class="text-right">{{activitydata.date}}</text>
+  	  		</view>
+  	  	</view>
+  	  </view>
+	  </view>
+	  <view class="space-block">
+	  	<view class="space-block-title">公司介绍</view>
+	  	<view class="space-block-content">
+	  		<view class="space-passage"> 和盛西部汽车·工厂店位于西安市沣东新城三桥国际车城1号馆（车城中心主场馆），位属陕西（中国）自由贸易区地域，占地面积10000余平（含办公区域），展厅布展面积7000余平，车辆品牌30余种，附属品牌45种，布展车辆150余辆，展厅销售人员300余人，销售部门从销售1部至销售30部团队机构健全，销售力量充沛，拥有专业的培训团队带薪强化培训。公司计划展厅落成后年销售量突破1万辆，年销售目标15亿元，努力成为带动西北地区汽车产业新零售模式的领头军。</view>
+	  		<view class="space-passage">特色描述：西北最大星空展厅。</view>
+	  		<view class="space-passage">地点描述：交通便利，可乘坐公交或地铁，及多处基础设施建设，银行、医院、餐饮、超市等。</view>
+	  	</view>
+  	</view>
+	</view>
+	
+</view>

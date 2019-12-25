@@ -1,0 +1,24 @@
+<template name="item">
+  <view class='item'>
+    <image class="image" src="{{image+'?imageView2/0/w/500'}}"  data-src="{{image}}" bindtap="previewImage" mode="aspectFill" data-id='{{id}}' data-index='{{index}}'  data-userid='{{userid}}' data-wxuserid='{{session3rd}}' catchtap='carvideo'></image>
+    <view class='buttom'>
+      <view class='title'>
+        <text>{{title}}</text>
+      </view>
+      <view class='videodes'>
+          <view class='left'>
+            <image class='playico' src='../menu/playico.png'></image>
+            <text class='playnum'>{{hits}}次观看</text>
+          </view>
+          <view class='right'>
+             <image class='priseico' src='../menu/prise.png'></image>
+             <text class='prisenum'>{{praisenum}}赞</text>
+          </view>         
+          <!-- <text class='username'>{{username}}</text> -->
+      </view>
+    </view>
+    <!-- <view class='item-text-view'>
+        <text class='time-text'>fsffasfsa</text>
+    </view> -->
+  </view>
+</template>

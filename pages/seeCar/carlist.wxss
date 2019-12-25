@@ -1,0 +1,174 @@
+.addvideo{
+  display: flex;
+  font-size: 50rpx;
+  flex-direction: row-reverse;
+}
+.interval{
+  height: 15rpx;
+  width: 100%;
+  background-color: #F0F0F2;
+  margin-top: -5rpx;
+}
+.head-top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 55rpx;
+  color: #8897BA;
+  font-weight: 100;
+  z-index: 5
+}
+.return-ico{
+  width: 20rpx;
+  position: relative;
+  left: 5rpx
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  height:55rpx;
+  justify-content: space-around; 
+  text-align: center;
+  position: fixed;
+  left:10%;
+  border: 1px rgb(240, 233, 233) solid;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  margin: 0rpx 0rpx 0rpx 50rpx;
+  background-color: #F8F8F8;
+}
+.search-name{
+  font-size: 35rpx;
+  height:55rpx;
+}
+.searchcion {
+  position: relative;
+  top: 5rpx;
+  left:50rpx;
+  z-index: 1;
+  width: 20rpx;
+  height: 20rpx;
+  text-align: center;
+}
+
+
+.sousuo {
+  margin-left: 629rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px rgb(240, 233, 233) solid;
+  border-radius: 15rpx 15rpx 15rpx 15rpx;
+  background-color: #F8F8F8;
+  height:55rpx;
+  justify-content: space-around; 
+}
+.icon{
+  text-align:end;
+  right: 0rpx;
+  font-size: 28rpx;
+}
+.choose-merchant{
+  width: 100%;
+  height:487rpx;
+  display: flex;
+  flex-direction: column;
+  border: 1rpx white solid;
+  background:white;
+  position:relative;
+  z-index:2;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border-top: 0;
+  transition: height 0.3s;
+}
+.choose-merchant view{
+  background-color: white;
+}
+.choose-merchant view:hover{
+  background-color: gainsboro;
+}
+.option{
+  display: block;
+  line-height: 35rpx;
+  font-size: 32rpx;
+  padding: 6rpx;
+  overflow-x: hidden;
+}
+.page-section{
+  width: 100%;
+  margin-top: 10rpx;
+}
+.img_item {
+  width: 49%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+.title{
+  margin-top: 5rpx; 
+  float: left;
+  height: 50%;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.buttom{
+  font-size: 26rpx;
+  width:100%;
+  height: 90rpx;
+  flex-direction: column;
+  margin-top: -90rpx;
+  margin-left: 10rpx;
+  position: relative;
+  color: white; 
+}
+.videodes{
+  display: flex;
+  flex-direction: row;
+  font-weight:100;
+  width: 99%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.prisenum{
+  width: 20%;
+  float: left;
+}
+.username{
+  width: 45%;
+  overflow:hidden;
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+  left:-60px;
+  position:relative;
+}
+.yz{
+  width: 35%;
+}
+.loading{
+  padding: 10rpx;
+  text-align: center;
+}
+.loading:before{
+  display: inline-block;
+  margin-right: 5rpx;
+  vertical-align: middle;
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+}
+.loading.complete:before{
+  display: none;
+}
+.addfile{
+  width:100rpx;
+  height:100rpx;
+  bottom:100rpx;
+  z-index:999;
+  position:absolute;
+  right:20rpx;
+}

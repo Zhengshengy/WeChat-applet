@@ -1,0 +1,27 @@
+<view class="container">
+<view class="title">
+    <text id="font">销售问答</text>
+  </view>
+	
+		<view class="my-reserve-list">
+			<view class="my-reserve-item" wx:for="{{hotList}}" wx:key="{{item.id}}">
+				<view class="my-reserve-img">
+					<image src="{{item.headimg}}" mode="scaleToFill" data-index="{{item.headimg}}" catchtap="imagePreview"></image>
+				</view>
+				<view class="my-reserve-text">
+					<view class="my-reserve-title">姓名:{{item.username}}</view>
+					<text>性别:{{item.sex}}</text>
+					<text>职位:{{item.position}}</text>
+				</view>
+        <view class="my-reserve-lianxi">
+					<view class="my-reserve-lianxi1">
+             <image src="../menu/5-150626144335.gif" mode="aspectFill" bindtap="calling" data-phone="{{item.phone}}"></image>
+          </view>
+					<view class="my-reserve-lianxi2">
+          <contact-button></contact-button>
+          </view>
+				</view>
+			</view>
+		</view>
+
+</view>

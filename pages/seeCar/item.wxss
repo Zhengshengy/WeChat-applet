@@ -1,0 +1,26 @@
+.left{
+  display: flex;
+  flex-direction: row;
+}
+.right{
+  display: flex;
+  flex-direction: row;
+}
+.playico{
+  width:20rpx;
+  height:20rpx;
+}
+.priseico{
+  width:35rpx;
+  height:40rpx;
+}
+.playnum{
+  font-size: 20rpx;
+  margin-left:10rpx;
+  margin-top:-2rpx;
+}
+.prisenum{
+  font-size: 20rpx;
+  margin-right: 20rpx;
+  margin-top:7rpx; 
+}

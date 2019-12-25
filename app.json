@@ -1,0 +1,85 @@
+{
+  "pages": [
+    "pages/authorize/authorize",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/myde/myde",
+    "pages/brandCar/brandCar",
+    "pages/article/article",
+    "pages/article/outherArticle",
+    "pages/video/video",
+    "pages/seeCar/carlist",
+    "pages/seeCar/index",
+    "pages/carVideo/carVideo",
+    "pages/video/videolist",
+    "pages/carVideo/videoPlayer",
+    "pages/carVideo/videoTest",
+    "pages/carVideo/index",
+    "pages/xswenda/xswenda",
+    "pages/photoPage/photoPage",
+    "pages/overView/overView",
+    "pages/configure/configure",
+    "pages/askPrice/askPrice",
+    "pages/login/login",
+    "pages/login/wxLogin",
+    "pages/apply/apply",
+    "pages/photoadd/index",
+    "pages/setpassword/index",
+    "pages/xitongxiaoxi/xitongxiaoxi",
+    "pages/newsinfo/newsinfo",
+    "pages/myziliao/myziliao",
+    "pages/huodong/huodong",
+    "pages/guanyu/guanyu",
+    "pages/jcphoto/index",
+    "pages/BMap/index",
+    "pages/chat-list/chat-list",
+    "pages/chat/chat",
+    "pages/chat-input/chat-input",
+    "pages/friends/friends",
+    "pages/user/user",
+    "pages/user/guanzhu",
+    "pages/user/call",
+    "pages/outherUser/flower",
+    "pages/myInfoSet/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "一部好车",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/menu/e7.png",
+        "selectedIconPath": "pages/menu/e7_ok.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "资讯",
+        "iconPath": "pages/menu/e2.png",
+        "selectedIconPath": "pages/menu/e2_ok.png"
+      },
+      {
+        "pagePath": "pages/myde/myde",
+        "text": "我的",
+        "iconPath": "pages/menu/e1.png",
+        "selectedIconPath": "pages/menu/e1_ok.png"
+      }
+    ],
+    "color": "#BCCBAB",
+    "selectedColor": "#E966A9",
+    "backgroundColor": "#FFFFFF"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "navigateToMiniProgramAppIdList": [
+    "wxf071f0a185c596fc"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

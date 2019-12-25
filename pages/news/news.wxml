@@ -1,0 +1,27 @@
+<view>正在开发中，敬请期待...</view>
+<!-- 
+<view class="container">
+<view class="title">
+    <text id="font">热点资讯</text>
+  </view>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+        class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">
+       <view class="conference-list"  wx:for="{{list}}">
+			<navigator url="../newsinfo/newsinfo?id={{item.id}}&&title={{item.title}}" id="{{item.id}}"  class="conference-item">
+				<view class="conference-item-img">
+					<image src="https://hcar.hswcs.com/Public{{item.tempimg}}"  mode="aspectFill"></image>
+					<text class="hover{{index}}">焦点</text>
+				</view>
+				<view class="conference-item-text">
+					<view class="conference-item-title" style='font-size: 38rpx;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;'>{{item.title}}</view>
+					<view class="conference-item-info activity-item-info">
+						<text class="icon-time" style='font-size: 30rpx;color: #B1B1B1;'>{{gongsi}}</text>
+					</view>
+					<view class="conference-item-info">
+						<text class="icon-zuobiao" style='font-size: 30rpx;color: #B1B1B1;'>{{item.author}}</text>
+					</view>
+				</view>
+			</navigator>
+		</view>
+    </scroll-view>
+</view> -->

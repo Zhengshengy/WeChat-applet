@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container" catchtap="changePlayStatus" bindtouchstart="touchStart" bindtouchend="touchEnd" bindtouchcancel="touchCancel">
+  <view class="animation-wrapper" animation="{{animation}}">
+  <!-- <block wx:for="{{videos}}" wx:key="{{item.videoUrl}}"> -->
+    <block wx:for="{{videoList}}" wx:for-index="key"  wx:for-item="value">
+      <view class="animation-image-wrapper" wx:if="{{value}}">
+        <image mode="aspectFill" class="animation-image" src="{{value.info.imageurl}}"></image>
+      </view>
+    </block>
+  </view>
+  <video class="vvideo" bindtimeupdate="bindtimeupdate" id="kdvideo" binderror="binderror" autoplay="{{autoplay}}" objectFit="fill" hidden="{{animationShow}}" src="{{videoList[videoIndex].info.videourl}}" bindplay="bindplay" controls="{{controls}}" loop="true"></video>
+  {{videoIndex}}
+  <image class="play-btn" wx:if="{{!playState && !animationShow}}" src="../menu/play.png"></image>
+  <progress class="progress" percent="{{percent}}" activeColor="#ffffff" backgroundColor="#A9A9A9" stroke-width="1"  wx:if="{{!animationShow}}" />
+</view>

@@ -1,0 +1,144 @@
+/* pages/carVideo/carVideo.wxss */
+::-webkit-scrollbar
+{
+width: 0rpx;
+height: 200rpx;
+color: transparent;
+}
+.main,.show,.show,.image,.coverimage{
+  width: 100%;
+  height: 100%;
+}
+#yincang{
+  height: 1;
+}
+.coverimage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.t-modal{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.t-zhezhao{
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-ico{
+  position: fixed;
+  height: 15%;
+  width: 15%;
+  top:50%;
+  left:50%;
+  margin-left:-80rpx;
+  margin-top: -80rpx
+}
+.title{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  bottom :75rpx;
+  width: 100%;
+  left:20rpx;
+  height: 90rpx;
+  color: white;
+  font-size: 30rpx;
+  z-index: 900
+}
+.my-reserve-lianxi1{
+  height:80rpx;
+}
+.des{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  bottom :0;
+  width: 100%;
+  height: 95rpx;
+  color: white;
+  font-size: 35rpx;
+  z-index: 990
+}
+.zixun{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  bottom :80rpx;
+  width: 20%;
+  right: -50rpx;
+  color: white;
+  font-size: 35rpx;
+  z-index: 999
+}
+.chat{
+  position: relative;
+  width: 65rpx;
+  height:65rpx;  
+  border-radius: 50%;
+  margin-top:20rpx;
+  margin-left:-1rpx;
+}
+.logo{
+  position: relative;
+  left:20rpx;
+  width: 90rpx;
+  height:90rpx;
+  border-radius: 50%;
+}
+.mename{
+  position: relative;
+  margin-left:50rpx;
+  text-align: center;
+  line-height:95rpx;
+  width:150rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size:28rpx
+}
+.flowerlogo{
+  position: relative;
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  bottom:-10rpx;
+}
+.destince{
+  position: fixed;
+  right:20rpx;
+}
+.my-reserve-lianxi{
+  position: relative;
+  width: 65rpx;
+  height:65rpx;  
+  border-radius: 50%;
+}
+.phonelogo{
+  position: relative;
+  left:-2rpx;
+  width: 65rpx;
+  height:65rpx;
+  border-radius: 50%
+}
+.priselogo{
+  position: relative;
+  left:-15rpx;
+  width: 90rpx;
+  height:90rpx;
+  bottom: 20rpx;
+  border-radius: 50%
+ 
+}
+

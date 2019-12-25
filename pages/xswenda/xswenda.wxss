@@ -1,0 +1,79 @@
+.title {
+  width: 100%;
+ background: #ffffff;
+  line-height: 120rpx;
+  text-align: center;
+  border: 1rpx solid #e8e8e8;
+  position:fixed;
+   top:0px;
+   z-index: 1000;
+  
+}
+
+.my-reserve-list{
+  width:100%;
+  margin-top:125rpx;
+}
+.my-reserve-item{
+  width:85%;
+  margin: 0 auto;
+   height: 170rpx;
+	padding: 20rpx 0rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+.my-reserve-img{
+  width:30%;
+  height: 156rpx;
+  float:left;
+}
+.my-reserve-img image{
+	width:100%;
+	height: 156rpx;
+}
+
+.my-reserve-text{
+	width: 40%;
+	margin: 0rpx 10%;
+	float:left;
+}
+.my-reserve-text text{
+line-height: 50rpx;
+}
+.my-reserve-text view{
+line-height: 50rpx;
+}
+.my-reserve-lianxi{
+width: 10%;
+	
+	float:left;
+}
+.my-reserve-lianxi1{
+width: 50rpx;
+height: 50rpx;
+}
+.my-reserve-lianxi2{
+width: 50rpx;
+height: 50rpx;
+margin-top:50rpx ;
+}
+.my-reserve-lianxi1 image{
+width: 50rpx;
+height: 50rpx;
+}
+.my-reserve-lianxi2 image{
+width: 50rpx;
+height: 50rpx;
+}
+.my-reserve-title{
+	color: #333;
+	width: 100%;
+	font-size: 34rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.my-reserve-text text{
+  font-size:31rpx;
+	display: block;
+	color: #888;
+}

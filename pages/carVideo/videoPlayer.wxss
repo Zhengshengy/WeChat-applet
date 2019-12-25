@@ -1,0 +1,7 @@
+/* pages/carVideo/videoplayer.wxss */
+.currentvideo{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,112 @@
+<import src="/pages/seeCar/item.wxml"/>
+<view class='body'>
+  <view class='head-top'>
+    <view class='search' hidden='{{hiddesearch}}'> 
+      <input class='search-name' placeholder="搜索视频"  bindinput="bindKeywordInput" value='{{searchKeyword}}'></input>
+    </view>
+    <icon class="searchcion sousuo" size='20' type='search' bindtap='searchVideo'></icon>
+  </view> 
+  <view >
+  <view class='content'>
+    <view class="item-view">
+      <block wx:for="{{videoList}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+      </block>
+    </view>
+    <view class="item-view">
+      <block wx:for="{{videoList}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+      </block>
+    </view>
+  </view>
+  </view>
+  <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>      
+  <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部视频</view>
+  <view class="loading nodata" hidden="{{!alert}}">没有相关视频</view> 
+</view>
+
+<!-- 
+<view class="page">
+    <view class='head-top'>
+      <view class='locationsite'> 
+        <text class='sitename' data-id='' data-name=''>{{sitename}}</text>
+        <text class='icon'>▼</text>
+      </view>     
+    </view>
+	<view class="banner">
+		<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		  <block class="swiperblock"  wx:for="{{imgUrls}}">
+		    <swiper-item  class="swiperitem" bindtap="goDetail">
+		      <image class='bannerimg' catchtap="imagePreviews" src="{{item}}"/>
+		    </swiper-item>
+		  </block>
+		</swiper>
+	</view>
+<view class="hottext">
+    <view class="hottext1"><text class='shuline'>|</text>汽车视频</view>
+    <view class="hottext2" bindtap="loadcar">更多></view>
+</view>
+<view class="hotcar" style="height:{{scrollH}}px">
+     <view style="display:none">
+        <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad" binderror="onImageLoadError" data-errorimg="{{item.index}}" data-index="{{item.index}}"></image>
+      </view>
+      <scroll-view style="height:{{scrollH}}px" bindscrolltolower="searchScrollLower" >
+        <view style="width:100%">
+          <view class="img_item">
+            <view wx:for="{{col1}}" wx:key="id">
+              <image lazy-load='{{true}}' src="{{item.pic}}" style="width:100%;height:{{item.height}}px" data-id='{{item.dataid}}' data-index='{{item.index}}'  data-userid='{{item.userid}}' data-wxuserid='{{item.wxuserid}}' catchtap='carvideo'>
+                <view class='buttom'>
+                  <view class='title'>
+                    <text>{{item.title}}</text>
+                  </view>
+                  <view class='videodes'>
+                    <text class='prisenum'>{{item.praisenum}}赞</text>
+                    <text class='username'>{{item.username}}</text>
+                  </view>
+                </view>
+              </image>
+            </view>
+          </view>
+          <view class="img_item">
+            <view wx:for="{{col2}}" wx:key="id">
+              <image lazy-load='{{true}}' src="{{item.pic}}" style="width:100%;height:{{item.height}}px" data-id='{{item.dataid}}' data-index='{{item.index}}'  data-userid='{{item.userid}}' data-wxuserid='{{item.wxuserid}}' catchtap='carvideo'>
+                <view class='buttom'>
+                  <view class='title'>
+                    <text>{{item.title}}</text>
+                  </view>
+                  <view class='videodes'>
+                    <text class='prisenum'>{{item.praisenum}}赞</text>
+                    <text class='username'>{{item.username}}</text>
+                  </view>
+                </view>
+              </image>
+            </view>
+          </view>
+        </view>  
+      </scroll-view>
+</view>
+  <view class="hottext hottextnew" bindtap="article">
+    <view class="hottext1"><text class='shuline'>|</text>汽车资讯</view>
+    <view class="hottext2">更多></view>
+  </view>
+    <view class="hotnews">
+      <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" style="height:{{winH}}px;">
+        <navigator url="../newsinfo/newsinfo?id={{item.aid}}&title={{item.title}}&praisenum={{item.praisenum}}"  wx:for="{{articleList}}" id="{{item.aid}}" class='hotxinwen'>
+          <view class='news' >     
+            <view class='left'>
+              <view class='atitle'>{{item.title}}</view>
+                <view class='ades'>
+                  <view class='aprisenum'>{{item.praisenum}}人赞</view>
+                  <view class='ausername'>{{item.author}}</view>
+                </view>
+              </view>
+            <view class='image'>
+              <image id='articleimage' src='{{headurl}}' wx:if="{{item.picurl==''}}" mode='aspectFill'></image>
+              <image id='articleimage' src='{{item.picurl}}' wx:else mode='aspectFill'></image>
+            </view>
+          </view>
+        </navigator>
+      </scroll-view>
+    </view>
+	<navigator url="../guanyu/guanyu" class="footer" bindtap="goIndexPage">和盛传媒</navigator>
+</view> -->

@@ -1,0 +1,35 @@
+<view class='body'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class='title'>
+        <input placeholder='标题' name='title'></input>
+      </view>
+      <view class='content'>
+        <view class='content-top'>
+            <view class='toWrite' bindtap='addImg'>
+              <text>描述</text>
+              <text style='margin-right:-390rpx;' >插入图片</text>
+              <image src='../../image/chat/extra/choose_picture.png' style='width:60rpx;height:60rpx;margin-right:30rpx;'/>
+            </view>
+        </view>
+        <view class='content-main'>
+            <view>
+              <textarea class='input_view' maxlength='-1' auto-height='true' bindinput='inputCon' style='width:{{width-20}}px;' value='{{firstCon}}' placeholder='写点什么...' bindblur="outBlur" id='0'/>
+                  <view wx:for="{{dataList}}" style='background-color:white;'>
+                    <view class='img_view' style='width:{{width-28}}px;max-height:{{width-28}}px;'>
+                      <image style='width:{{width-28}}px;max-height:{{width-28}}px;' src='{{item.pic}}' mode='aspectFill' name='ceshi'/>
+                      <view  class='cancelicon'>
+                        <icon type='cancel' bindtap='deletedImg' data-index='{{index}}' size='35' color='#ef8383'></icon>
+                      </view>
+                  </view>
+              <textarea class='input_view' maxlength='-1' auto-height='true' bindinput='inputCon' style='width:{{width-20}}px;' value='{{item.value}}' placeholder='写点什么...' bindblur="outBlur" id='{{index+1}}'/>
+            </view>
+            <!-- <view style='height:20rpx;width:100%;'></view> -->
+        </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button formType="submit"  type="primary" size="default" style='background: #FC4C91;'>提交</button>
+        <button formType="reset" style='margin-top:20rpx;background: #FC4C91;'  type="primary" size="default">重置</button>
+      </view>
+    </form>
+</view>

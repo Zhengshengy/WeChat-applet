@@ -1,0 +1,48 @@
+<web-view src="{{url}}"></web-view>
+<!-- 轮播图片
+<swiper duration="{{duration}}" vertical="{{true}}" bindchange="bindSwiperChange" current="{{current}}" class='swiper' >
+  <block wx:for="{{videoList}}"  wx:for-index="key"  wx:for-item="value">
+    <swiper-item wx:if="{{value}}" item-id='{{value.info.index}}' class='swiper-item'>
+            <image src="{{value.info.imageurl}}"  class="slide-image" bindtap='previewSubject'  bindload='imgSet' binderror="onImageLoadError" style='height:{{value.info.imageH}};width:{{value.info.imageW}};' data-key='{{key}}'></image>
+            
+<view class='t-modal' catchtouchmove="preventTouchMove" ></view>
+<cover-view class='t-zhezhao demotext' bindtap='isPlay' ></cover-view>
+  <view class='videoplayer' style="height:{{winH}}px;width:{{winW}}px;">  
+     <view class='video'>
+     <view hidden='true'></view>
+      <view class='main'>
+        <view id='yincang'></view>
+         <view class='show'>
+            <view class='image'>
+              <video hidden='{{value.info.isHiddenVideo}}' class='coverimage' id='myVideo{{key}}' style="height:{{winH}}px;width:{{winW}}px;cursor:pointer;" src='{{value.info.videourl}}' custom-cache="{{false}}" autoplay='{{false}}' loop='true' enable-progress-gesture="{{false}}"  show-play-btn="{{false}}" show-fullscreen-btn="{{false}}" controls="{{false}}"  show-fullscreen-btn='{{false}}' objectFit='contain' >
+              </video>
+            </view>
+         </view>
+          <cover-view class='zixun' wx:if="{{value.info.hiddenzixun?true:false}}">
+          <cover-view class='prise'>       
+              <cover-view style='margin-bottom: 20rpx;color: white;font-size: 35rpx;margin-right: 85rpx;'>{{value.info.userinfo.praise}}</cover-view>
+              <cover-image src='../menu/prise.png' bindtap="addPraise" mode="aspectFill" class='priselogo' ></cover-image>
+          </cover-view>
+          <cover-view class="my-reserve-lianxi" wx:if="{{value.info.phone?true:false}}">
+              <cover-view class="my-reserve-lianxi1">
+                <cover-image src="../menu/phone.png" mode="aspectFill" bindtap="calling" data-phone="{{value.info.phonenumber}}" class='phonelogo'></cover-image>
+              </cover-view>
+           </cover-view>
+           <cover-image src='../menu/chat.png' bindtap="chatToUser" wx:if="{{value.info.hiddenchat?true:false}}" class='chat' >
+           </cover-image>
+         </cover-view>
+        <cover-view class='title'>
+           <cover-view class='titledes'>{{value.info.ptitle}}</cover-view>
+         </cover-view>
+           <cover-view class='des'>
+              <cover-image class='logo' src='{{value.info.logo}}' bindtap='userinfo'></cover-image>
+              <cover-view class='mename'>{{value.info.username}}</cover-view>
+              <cover-image class='flowerlogo' bindtap='addFlower' data-flower="{{value.info.userinfo.flower}}"src='{{value.info.userinfo.flowerLogo}}'></cover-image>
+              <cover-view class='destince' hidden='{{hidden}}' catchtap='baidumap' >1km</cover-view>
+            </cover-view>
+      </view>   
+     </view>  
+  </view>
+    </swiper-item>
+  </block>
+</swiper> -->

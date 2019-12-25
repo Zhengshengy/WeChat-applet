@@ -1,0 +1,162 @@
+/* @import "../../wxParse/wxParse.wxss"; */
+page{ background: #FFF; font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif; }
+.contain_detail_cnt { height: 100%; width: 100%; overflow: hidden; }
+.wxParse-img{
+  width:80%;
+}
+.wxParse-inline{
+  width: 715rpx;
+  display:block;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.box-title{ padding: 5px 5px;  display: flex; flex-direction: column;}
+.title{ 
+    font-size: 18px; 
+    line-height: 25px; 
+    color: #000; 
+    font-weight: 600; 
+    width:560rpx;
+    float: left;
+    margin-top: 5rpx; 
+    height: 50%;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-right:20rpx; 
+  }
+.posttime{ font-size: 12px; line-height: 25px; color:#999; font-weight: 600; }
+.articledes{display: flex; flex-direction: row; justify-content: space-between; height:22px}
+.brandname{width: 20%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.merchantname{width: 20%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.prise{font-size:28rpx;margin-right:20rpx;}
+/* .brandname{overflow: hidden} */
+.content{ line-height: 1.8em;  font-size: 14px; color: #666;margin: 0 20rpx 0 20rpx; }
+.scrollLoading{ width: 100%; height: 220px; display: block; margin: 10px 0; }
+.contView{ padding: 0 20px 10px; }
+/* 评论 */
+.content-comments{ margin-bottom: 20px; }
+.comments-title{ font-size: 14px; font-weight: bold; display: block; text-align: center; padding: 10px; }
+
+.comments-list{ margin-top: 10px; position: relative; padding: 10px; min-height: 40px;}
+.comments-avatar{ position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; }
+.comments-avatar-img{ width: 40px; height: 40px; border-radius: 50%; border: 1px solid #F2F2F2; }
+.comments-main{ margin-left: 50px; font-size: 14px; }
+.comments-author{ margin-bottom: 6px; color: #999; font-weight: bold; height: 20px; line-height: 20px; }
+.comments-zan{ float: right; padding-left: 18px; position: relative; font-weight: normal; line-height: 20px; }
+.comments-zan::before{ content: ''; height: 14px; width: 14px; background: url("../../static/zan.png")  #FFF no-repeat 50% 50%; background-size: cover; position: absolute; top: 2px; left: 0; }
+.comments-content{ color: #666; line-height: 20px; }
+.comments-data{ height: 18px; margin-top: 5px; line-height: 18px; font-size: 12px; color: #999; }
+
+.not-comments{ text-align: center; padding: 30px 20px; font-size: 14px; color: #999; }
+
+/* 浮动 */
+.extra{ height: 40px; background: #FFF; border-top: 1px solid #F2F2F2; position: fixed; bottom: 0px; left: 0; right: 0px; width: 100%; box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1); }
+.extra-input{ width: 50%; height: 20px; margin: 10px; font-size: 13px; font-weight: 300; line-height: 20px; padding: 0 6px; border-left: 2px solid #48C23D; color: #444; }
+.extra-placeholder{ font-size: 13px; font-weight: 300; color: #999; }
+/* 点赞 评论 分享 */
+.extra-share{ position: absolute; right: 5px; width: 50%; }
+.extra-share-img{ width: 20px; height: 20px; float: right; padding: 10px 15px; }
+
+/* 分享box */
+.extra-share-box{ display: none; width: 100%; position: fixed; bottom: 0; left: 0; right: 0; top: 0; height: 100%; }
+.share-box-show{ position: absolute; left: 0; right: 0; bottom: -210px; z-index: 2; height: 200px; background: #FFF; }
+.share-box-img-box{ padding: 10px 20px; width: 240px; margin: 0 auto; display: block; overflow: hidden; }
+.share-box-img{ width: 40px; height: 40px; padding: 10px; margin: 5px 10px; float: left; }
+.share-box-opacity{ background: #000; opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
+.share-box-close{ width: 100%; background: #F5F5F5; text-align: center; line-height: 40px; font-size: 14px; }
+.des{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  top :5rpx;
+  width: 100%;
+  height: 95rpx;
+  color: white;
+  font-size: 35rpx;
+  align-items: center;
+  justify-content:flex-end;
+}
+.zixun{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  bottom :80rpx;
+  width: 20%;
+  right: -50rpx;
+  color: white;
+  font-size: 35rpx;
+  z-index: 999
+}
+.chat{
+  position: relative;
+  width: 65rpx;
+  height:65rpx;  
+  border-radius: 50%;
+  margin-top:20rpx;
+  margin-left:-1rpx;
+}
+.logo {
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  margin-right:35rpx;
+}
+.mename{
+  margin-right:20rpx;
+  text-align:center;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+  font-size:28rpx;
+}
+.my-reserve-lianxi{
+  position: relative;
+  width: 65rpx;
+  height:65rpx;  
+  border-radius: 50%;
+}
+.phonelogo{
+  position: relative;
+  left:-2rpx;
+  width: 65rpx;
+  height:65rpx;
+  border-radius: 50%
+}
+.priselogo{
+  position: relative;
+  left:-15rpx;
+  width: 90rpx;
+  height:90rpx;
+  bottom: 20rpx;
+  border-radius: 50%
+ 
+}
+.flowerlogo {
+  width:32px;
+  height:60rpx;
+  border-radius:50%;
+  margin-bottom:3rpx;
+  margin-right:20rpx;
+}
+.author{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  top :80rpx;
+  width: 100%;
+  height: 95rpx;
+  font-size: 35rpx;
+  align-items: center;
+  justify-content:flex-end;
+}
+.destince{
+  position: fixed;
+  right:20rpx;
+}
+

@@ -1,0 +1,69 @@
+<view class='body'>
+  <view class='chat' >
+    <button class='flower' bindtap='addFlower'>{{flower}}</button>
+  </view>
+  <view class="user-head">
+      <view class="center">
+          <view class="user-img">
+              <image mode="scaleToFill" src="{{headimg}}" />
+              <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <view class="user-text">
+            <view class='username'>{{username}}</view>
+            <view class='phone'>电话：{{phone}}</view>
+          </view>
+      </view>
+  </view>
+
+  <view class="list">
+      <view class='item1' id='article' bindtap='article'>
+        <text id='articlenum' class='myitem'>
+        {{acount}}
+        </text>
+        <text class='myitems'>
+          文章
+        </text>
+      </view>
+      <view class='item1' id='video' bindtap='video'>
+        <text id='videonum' class='myitem'>
+        {{vcount}}
+        </text>
+        <text class='myitems'>
+          视频
+        </text>
+      </view>
+      <view class='item1' id='flower' bindtap='flower'>
+        <text id='flowernum' class='myitem'>
+        {{fcount}}
+        </text>
+        <text class='myitems'>
+          粉丝
+        </text>
+      </view>
+  </view>
+<view class='videolist'>
+  <view style="display:none">
+    <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad" binderror="onImageLoadError" data-errorimg="{{item.index}}" data-index="{{item.index}}"></image>
+  </view>
+<import src="/pages/seeCar/item.wxml"/>
+<view class='body1'>
+  <view >
+  <view class='content'>
+    <view class="item-view">
+      <block wx:for="{{videoList}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+      </block>
+    </view>
+    <view class="item-view">
+      <block wx:for="{{videoList}}" wx:key="">
+        <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+      </block>
+    </view>
+  </view>
+  </view>
+  <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>      
+  <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部视频</view>
+  <view class="loading nodata" hidden="{{!alert}}">没有相关视频</view> 
+</view> 
+</view>
+</view>

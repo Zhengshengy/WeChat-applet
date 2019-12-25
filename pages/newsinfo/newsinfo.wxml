@@ -1,0 +1,42 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<scroll-view scroll-y="true" class="contain_detail_cnt" style="height:{{winHeight - 40}}px;">  
+	<!-- 标题 -->
+	<view class="box-title">
+		<text class="title">{{title}}</text>
+    <text class='posttime'>{{articleInfo.posttime}}</text>
+	</view>
+    <view class='articledes'>    
+      <view class='des'>
+              <image class='flowerlogo' bindtap='addFlower' data-flower="{{flower}}"src='{{flowerLogo}}'></image>
+        <image class='logo' src='{{logo}}' bindtap='userinfo'></image>
+
+        
+      </view>
+    </view>
+    <view class='author'>
+        <view class='prise'>{{praisenum}}人赞</view>
+        <view class='mename'>作者：{{username}}</view>
+    </view>
+
+              <view class='destince' hidden='{{hidden}}' catchtap='baidumap' >1km</view>
+
+	<!-- 内容 -->
+	<view class="content" scroll-y="true">
+		<block>
+      <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+		</block>
+	</view>
+            <cover-view class='zixun' wx:if="{{hiddenzixun?true:false}}">
+          <cover-view class='myprise'>       
+              <cover-view style='margin-bottom: 20rpx;color: white;font-size: 35rpx;'>{{praise}}</cover-view>
+              <cover-image src='../menu/prise.png' bindtap="addPraise" mode="aspectFill" class='priselogo' ></cover-image>
+          </cover-view>
+          <cover-view class="my-reserve-lianxi" wx:if="{{phone?true:false}}">
+              <cover-view class="my-reserve-lianxi1">
+                <cover-image src="../menu/phone.png" mode="aspectFill" bindtap="calling" data-phone="{{phonenumber}}" class='phonelogo'></cover-image>
+              </cover-view>
+           </cover-view>
+           <cover-image src='../menu/chat.png' bindtap="chatToUser" wx:if="{{hiddenchat?true:false}}" class='chat' >
+           </cover-image>
+         </cover-view>
+</scroll-view>

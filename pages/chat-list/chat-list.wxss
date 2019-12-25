@@ -1,0 +1,43 @@
+/* pages/chat-list/chat-list.wxss */
+@import "view/chat-item.wxss";
+.confirm{
+  position:relative;
+  top:-30rpx;
+  right:-185rpx;
+}
+.handle{
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  border-top:1rpx gainsboro solid;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.handle-left{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.handle-right{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.delete{
+  width:35rpx;
+  height:38rpx;
+}
+.close{
+  width:35rpx;
+  height:38rpx;
+}
+.delete-text{
+  font-size: 21rpx;
+}
+.close-text{
+  font-size: 21rpx;
+}
